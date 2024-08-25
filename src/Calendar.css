@@ -1,0 +1,68 @@
+/* src/Calendar.css */
+.calendar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+  }
+  
+  .calendar-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .calendar-day-name {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-empty {
+    background-color: transparent;
+  }
+  
+  .holiday {
+    background-color: #ffeb3b; /* Yellow background for holidays */
+  }
+  
+  .holiday-info {
+    font-size: 12px;
+    color: #000;
+    margin-top: 2px;
+  }
+  
+  .add-holiday {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  .add-holiday input {
+    margin-right: 10px;
+  }
+  
